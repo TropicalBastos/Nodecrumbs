@@ -1,9 +1,9 @@
 'use strict';
 
-var _MiniCrumbs = require('./MiniCrumbs');
+var _Nodecrumbs = require('./Nodecrumbs');
 
-var _MiniCrumbs2 = _interopRequireDefault(_MiniCrumbs);
+var _Nodecrumbs2 = _interopRequireDefault(_Nodecrumbs);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-module.exports = { MiniCrumbs: _MiniCrumbs2.default };
+module.exports = { Nodecrumbs: _Nodecrumbs2.default };

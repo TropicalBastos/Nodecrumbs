@@ -14,12 +14,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var MiniCrumbs = function () {
-    function MiniCrumbs(req) {
+var Nodecrumbs = function () {
+    function Nodecrumbs(req) {
         var fm = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "standard";
         var home = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "home";
 
-        _classCallCheck(this, MiniCrumbs);
+        _classCallCheck(this, Nodecrumbs);
 
         this.breadcrumbs = null;
         this.wordsPattern = /([+\-_$%{}()])|(%20)/g;
@@ -38,13 +38,13 @@ var MiniCrumbs = function () {
         this.uri = uri;
 
         if (fm !== "upper" && fm !== "lower" && fm !== "standard") {
-            throw "Format Exception: no format specified for Minicrumbs";
+            throw "Format Exception: no format specified for Nodecrumbs";
         } else {
             this.format = fm;
         }
     }
 
-    _createClass(MiniCrumbs, [{
+    _createClass(Nodecrumbs, [{
         key: "formatCrumbs",
         value: function formatCrumbs(words) {
             var result = [];
@@ -159,7 +159,7 @@ var MiniCrumbs = function () {
         }
     }]);
 
-    return MiniCrumbs;
+    return Nodecrumbs;
 }();
 
-exports.default = MiniCrumbs;
+exports.default = Nodecrumbs;

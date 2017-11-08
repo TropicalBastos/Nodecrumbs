@@ -1,11 +1,11 @@
 var path = require('path');
-var MiniCrumbs = require(path.join(__dirname, '../dist/index.js')).MiniCrumbs;
+var Nodecrumbs = require(path.join(__dirname, '../dist/index.js')).Nodecrumbs;
 var should = require('should');
 
 //Mock objects for test cases
 var req = {url: "/test/testing"};
-var minicrumbs = new MiniCrumbs(req, 'standard', 'home', {'test': true});
-var arr = minicrumbs.parse();
+var nodecrumbs = new Nodecrumbs(req, 'standard', 'home', {'test': true});
+var arr = nodecrumbs.parse();
 
 describe('Test Presence of Crumbs', function() {
     it('Crumbs should always exist with appropriate uri', function() {
@@ -21,7 +21,7 @@ describe('Crumb Getters', function() {
     });
 });
 
-describe('MiniCrumbs', function() {
+describe('Nodecrumbs', function() {
     describe('#parse()', function(){
         it('should always return an array', function() {
             arr.should.be.instanceof(Array);

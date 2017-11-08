@@ -1,3 +1,3 @@
-import MiniCrumbs from './MiniCrumbs';
+import Nodecrumbs from './Nodecrumbs';
 
-module.exports = {MiniCrumbs: MiniCrumbs};
+module.exports = {Nodecrumbs: Nodecrumbs};

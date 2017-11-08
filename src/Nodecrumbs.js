@@ -1,6 +1,6 @@
 import Crumb from './Crumb';
 
-export default class MiniCrumbs{
+export default class Nodecrumbs{
 
     constructor(req, fm = "standard", home = "home"){
         this.breadcrumbs = null;
@@ -22,7 +22,7 @@ export default class MiniCrumbs{
         if(fm !== "upper"
             && fm !== "lower"
             && fm !== "standard"){
-                throw "Format Exception: no format specified for Minicrumbs";
+                throw "Format Exception: no format specified for Nodecrumbs";
             }else{
                 this.format = fm;
             }
