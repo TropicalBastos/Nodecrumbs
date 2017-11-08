@@ -1,4 +1,3 @@
-import Crumb from './Crumb';
 
 export default class Nodecrumbs{
 
