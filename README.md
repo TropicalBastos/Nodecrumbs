@@ -37,6 +37,16 @@ though a premade render function using the initial nodecrumbs object (not the pa
 
 Will render the default breadcrumbs markup
 
+To manually render the breadcrumbs, you would iterate the crumbs array and use the <strong>getUri()</strong> and <strong>getName()</strong> methods respectively:
+
+```html
+<ul>
+<% for(var crumb in crumbs) {%>
+    <li><a href="<%= crumbs[crumb].getUri(); %>"><%= crumbs[crumb].getName(); %></a></li>
+<% } %>
+</ul>
+```
+
 ## Documentaion
 
 The Nodecrumbs constructor takes the following arguments:
