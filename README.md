@@ -19,7 +19,7 @@ var nodecrumbs = require('nodecrumbs').Nodecrumbs;
 
 app.get('/', (req, res) => {
     var crumbs = new Nodecrumbs(req);
-});
+    //parse the crumbs into an array and then pass it into your view
 ```
 
 This will return you an instance of the Nodecrumbs object of which you can:
