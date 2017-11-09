@@ -42,7 +42,7 @@ To manually render the breadcrumbs, you would iterate the crumbs array and use t
 ```html
 <ul>
 <% for(var crumb in crumbs) {%>
-    <li><a href="<%= crumbs[crumb].getUri(); %>"><%= crumbs[crumb].getName(); %></a></li>
+    <li><a href="<%= crumbsArray[crumb].getUri(); %>"><%= crumbsArray[crumb].getName(); %></a></li>
 <% } %>
 </ul>
 ```
