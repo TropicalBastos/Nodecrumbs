@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 });
 ```
 
-This will return you an instance of MiniCrumbs of which you can:
+This will return you an instance of the Nodecrumbs object of which you can:
 
 ```javascript
 var crumbsArray = crumbs.parse();
